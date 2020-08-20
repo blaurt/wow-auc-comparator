@@ -1,0 +1,27 @@
+{
+  "presets": ["next/babel"],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["./"],
+        "alias": {
+          "node_modules": "./node_modules",
+          "@node_modules": "./node_modules",
+          "@components": "./src/components",
+          "@containers": "./src/containers",
+          "@Definitions": "./src/Definitions",
+          "@pages": "./pages",
+          "@store": "./src/store",
+          "@modules": "./src/modules",
+          "@interfaces": "./src/interfaces",
+          "@services": "./src/Services",
+          "@server": "./server",
+          "@static": "./src/static"
+        },
+        "cwd": "babelrc"
+      }
+    ]
+  ],
+  "sourceMaps": "both"
+}

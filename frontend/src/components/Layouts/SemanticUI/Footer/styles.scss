@@ -1,0 +1,20 @@
+@import 'variables';
+
+footer {
+  height: 2rem;
+  align-items: center;
+  background-color: $header-color;
+  display: flex;
+  justify-content: space-around;
+
+  nav {
+    .item {
+      color: #a09595;
+      text-decoration: none;
+
+      &.current {
+        color: #2b2b2b;
+      }
+    }
+  }
+}
